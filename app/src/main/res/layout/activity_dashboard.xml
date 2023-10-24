@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".DashboardActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="240dp"
+            android:layout_height="80dp"
+            android:text="Digital Tech"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.748"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.039" />
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="88dp"
+            android:layout_height="104dp"
+            android:src="@drawable/lg"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="2dp" />
+
+        <ImageView
+            android:id="@+id/lineImageView"
+            android:layout_width="387dp"
+            android:layout_height="112dp"
+            android:src="@drawable/line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="50dp" />
+
+        <ImageView
+            android:id="@+id/introImageView"
+            android:layout_width="413dp"
+            android:layout_height="315dp"
+            android:src="@drawable/dash"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="89dp" />
+
+        <LinearLayout
+            android:id="@+id/cardProfile"
+            android:layout_width="187dp"
+            android:layout_height="154dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="400dp"
+            tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="73dp"
+                    android:layout_height="56dp"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_person"
+                    tools:layout_editor_absoluteX="60dp"
+                    tools:layout_editor_absoluteY="1000dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textColor="@color/black"
+                    android:textFont="bold"
+                    android:textSize="40dp"
+                    tools:layout_editor_absoluteX="28dp"
+                    tools:layout_editor_absoluteY="453dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardReports"
+            android:layout_width="189dp"
+            android:layout_height="149dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="12dp"
+            tools:layout_editor_absoluteY="568dp"
+            tools:ignore="DuplicateIds,MissingConstraints">
+
+                <ImageView
+                    android:layout_width="121dp"
+                    android:layout_height="87dp"
+                    android:background="@color/white"
+                    android:src="@drawable/charts"
+                    tools:layout_editor_absoluteX="60dp"
+                    tools:layout_editor_absoluteY="1000dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reports"
+                    android:textColor="@color/black"
+                    android:textFont="bold"
+                    android:textSize="40dp"
+                    tools:layout_editor_absoluteX="28dp"
+                    tools:layout_editor_absoluteY="453dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardR_Incidences"
+            android:layout_width="182dp"
+            android:layout_height="153dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="213dp"
+            tools:layout_editor_absoluteY="401dp"
+            tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="91dp"
+                    android:layout_height="70dp"
+                    android:background="@color/white"
+                    android:src="@drawable/report"
+                    tools:layout_editor_absoluteX="60dp"
+                    tools:layout_editor_absoluteY="1000dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Report Incidences"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textFont="bold"
+                    android:textSize="30dp"
+                    tools:layout_editor_absoluteX="28dp"
+                    tools:layout_editor_absoluteY="453dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardI_Tips"
+            android:layout_width="186dp"
+            android:layout_height="149dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="213dp"
+            tools:layout_editor_absoluteY="568dp"
+            tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="91dp"
+                    android:layout_height="70dp"
+                    android:background="@color/white"
+                    android:src="@drawable/info"
+                    tools:layout_editor_absoluteX="60dp"
+                    tools:layout_editor_absoluteY="1000dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Incidences Tips"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textFont="bold"
+                    android:textSize="30dp"
+                    tools:layout_editor_absoluteX="28dp"
+                    tools:layout_editor_absoluteY="453dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardLogout"
+            android:layout_width="94dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="299dp"
+            tools:layout_editor_absoluteY="116dp"
+            tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="53dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:src="@drawable/logout"
+                    tools:layout_editor_absoluteX="60dp"
+                    tools:layout_editor_absoluteY="1000dp" />
+
+                <TextView
+                    android:layout_width="166dp"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textFont="bold"
+                    android:textSize="15dp"
+                    tools:layout_editor_absoluteX="28dp"
+                    tools:layout_editor_absoluteY="453dp" />
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
